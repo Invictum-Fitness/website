@@ -43,6 +43,12 @@ body {
     color: var(--text-primary);
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 /* ========== LAYOUT ========== */
 
 .header {
@@ -170,8 +176,10 @@ body {
 }
 
 .footer-button {
-    height: 20px;
+    max-height: 20px;
+    width: auto;
 }
+
 
 
 
@@ -345,6 +353,8 @@ iframe {
     margin-left: 40px;
     margin-right: 40px;
     margin-top: 20px;
+    width: auto;
+    max-width: 180px;
 }
 
 .buttons-section{
