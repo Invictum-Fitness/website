@@ -1,0 +1,299 @@
+/* ========== COLOR TOKENS (Flutter -> CSS) ========== */
+
+:root {
+    --bg-top: #0B1220;
+    --bg-bottom: #060A12;
+
+    --surface: #0F172A;
+    --surface-2: #111C33;
+    --border: #22304A;
+
+    --primary: #1E4ED8;
+    --primary-soft: #2F6FDB;
+
+    --text-primary: #FFFFFF;
+    --text-secondary: #B3B3B3;
+}
+
+/* ========== BASE ========== */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    background: linear-gradient(to bottom,
+            var(--bg-top),
+            var(--bg-bottom));
+    color: var(--text-primary);
+}
+
+/* ========== LAYOUT ========== */
+
+.header {
+    padding: 64px 24px 32px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2rem;
+    margin-bottom: 8px;
+}
+
+.header p {
+    color: var(--text-secondary);
+}
+
+.container {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 0 16px 64px;
+}
+
+/* ========== CARDS ========== */
+
+.card {
+    position: relative;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 16px;
+}
+
+.card h2 {
+    margin-top: 0;
+    font-size: 1.2rem;
+}
+
+.card ul {
+    padding-left: 18px;
+}
+
+.card li {
+    margin-bottom: 6px;
+}
+
+.involved-button {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+
+    padding: 6px 12px;
+    font-size: 0.75rem;
+    font-weight: 500;
+
+    background: transparent;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    border-radius: 999px;
+
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.involved-button:hover {
+    background: rgba(30, 78, 216, 0.1);
+    text-decoration: none;
+}
+
+
+.muted {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+/* ========== ACTIONS ========== */
+
+.actions {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 500;
+    border: 1px solid transparent;
+}
+
+.button.primary {
+    background: var(--primary);
+    color: white;
+}
+
+.button.primary:hover {
+    background: var(--primary-soft);
+}
+
+.button.ghost {
+    border: 1px solid var(--border);
+    color: var(--text-primary);
+}
+
+/* ========== FOOTER ========== */
+
+.footer {
+    text-align: center;
+    padding: 24px;
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+}
+
+/* ========== NAVIGATION ========== */
+
+.nav {
+    background: rgba(15, 23, 42, 0.9);
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.nav-container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 14px 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 600;
+}
+
+.logo-image {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.logo-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-section a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-primary);
+}
+
+
+.nav-links a {
+    margin-left: 16px;
+    text-decoration: none;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+}
+
+.nav-links a.active,
+.nav-links a:hover {
+    color: var(--text-primary);
+}
+
+/* ========== HERO ========== */
+
+.hero {
+    text-align: center;
+    padding: 56px 16px 40px;
+}
+
+.hero h1 {
+    margin-bottom: 8px;
+}
+
+.hero p {
+    color: var(--text-secondary);
+}
+
+/* ========== LINKS ========== */
+
+.link {
+    display: inline-block;
+    margin-top: 8px;
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.launch-card {
+    position: relative;
+    border: 1px solid var(--primary);
+    background: linear-gradient(180deg,
+            rgba(30, 78, 216, 0.08),
+            rgba(15, 23, 42, 1));
+}
+
+.launch-badge {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background: var(--primary);
+    color: white;
+    padding: 6px 12px;
+    font-size: 0.75rem;
+    border-radius: 999px;
+    font-weight: 500;
+}
+
+.page-header {
+    margin-bottom: 24px;
+}
+
+.page-header h1 {
+    margin-bottom: 6px;
+}
+
+.involved-cta {
+    text-align: center;
+}
+
+.small {
+    font-size: 0.8rem;
+}
+
+iframe {
+    border-radius: 16px;
+    border: 1px solid var(--border);
+}
+
+.notice {
+    margin-top: 14px;
+    padding: 14px;
+    border-radius: 14px;
+    border: 1px solid var(--border);
+    background: rgba(30, 78, 216, 0.08);
+}
+
+.thanks-card {
+    text-align: center;
+    padding: 32px 24px;
+    margin-top: 20px;
+}
+
+.thanks-icon {
+    font-size: 2rem;
+    margin-bottom: 12px;
+}
+
+.thanks-actions {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
