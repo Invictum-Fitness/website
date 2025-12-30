@@ -21,8 +21,21 @@
     box-sizing: border-box;
 }
 
+html,
+body {
+    min-height: 100%;
+}
+
+main {
+    flex: 1;
+}
+
+
 body {
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
     background: linear-gradient(to bottom,
             var(--bg-top),
@@ -139,11 +152,28 @@ body {
 /* ========== FOOTER ========== */
 
 .footer {
-    text-align: center;
+    margin-top: auto;
     padding: 24px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+
     color: var(--text-secondary);
     font-size: 0.85rem;
 }
+
+.footer-socials {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-button {
+    height: 20px;
+}
+
+
 
 /* ========== NAVIGATION ========== */
 
@@ -195,6 +225,17 @@ body {
     text-decoration: none;
     color: var(--text-secondary);
     font-size: 0.95rem;
+}
+
+.footer a {
+    display: inline-block;
+    margin-top: 8px;
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
 }
 
 .nav-links a.active,
@@ -296,4 +337,24 @@ iframe {
     justify-content: center;
     gap: 12px;
     flex-wrap: wrap;
+}
+
+
+.store-button{
+    height: 48px;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: 20px;
+}
+
+.buttons-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.coming-soon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
