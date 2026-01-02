@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Invictum Fitness - Help</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="logo-section">
+                <a href="index.html">
+                    <img class="logo-image" src="assets/images/sword-logo2.png" alt="Logo">
+                    <span class="logo">Invictum Fitness</span>
+                </a>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="updates.html">Updates</a>
+                <a href="about.html">About</a>
+                <!-- <a href="help.html" class="active">Help</a> -->
+            </div>
+        </div>
+    </nav>
+    <div class="jump-to">
+        <label for="jump-select" class="jump-label">Jump to</label>
+        <select id="jump-select" onchange="if(this.value) location.href=this.value;">
+            <option value="">Select section</option>
+            <option value="#home">Home Screen</option>
+            <option value="#workout">Workout Screen</option>
+            <option value="#nutrition">Nutrition Screen</option>
+            <option value="#achievements">Achievements</option>
+            <option value="#profile">Profile</option>
+            <option value="#template">Templates</option>
+        </select>
+    </div>
+
+
+
+    <main class="container">
+
+        <h1>Help</h1>
+
+        <section class="card" id="home">
+            <h2>Home Screen</h2>
+            <div>
+                <p class="muted">Overview</p>
+
+                <p>
+                    The <strong>Overview</strong> section gives you a quick summary of your
+                    activity for the current week. Here you can see how many workouts and
+                    exercises you have completed, as well as your current streak. The streak is calculated by how
+                    many days in a row you've completed a workout.
+                </p>
+
+                <p>
+                    On the right side of the Overview card you will find two action buttons:
+                </p>
+
+                <div class="action-list">
+                    <div class="action-item">
+                        <img src="assets/images/homescreen/add_workout_button.jpg" alt="">
+                        <strong>Start Workout</strong>
+                        <span class="dash">-</span>
+                        <span class="description">
+                            The start workout button immediately starts a new <a href="">workout</a> so you can begin
+                            training right away.
+                        </span>
+                    </div>
+
+                    <div class="action-item">
+                        <img src="assets/images/homescreen/add_template_button.jpg" alt="">
+                        <strong>Choose Template</strong>
+                        <span class="dash">-</span>
+                        <span class="description">
+                            The second button lets you select a workout <a href="#template">template</a> to quickly
+                            start a
+                            predefined routine.
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p class="muted">Last Workout</p>
+                <p>The last workout will show you the last workout you've completed. You can press it to view the
+                    complete workout.</p>
+                <p>If no workouts have yet to be completed, a start workout button will show up. You can use this button
+                    to start your first workout.</p>
+            </div>
+            <div>
+                <p class="muted">Nutrition</p>
+
+                <p>
+                    The <strong>Nutrition</strong> section gives you a quick summary of your
+                    total calories and protein that you've consumed today. This will be displayed in the progressbar
+                    and the text above it. Without a goal, the calories will be set to 2600kcal and the protein to 150g.
+                    Please note
+                    that these values might not be right for you. Calculate or add your goals in the nutrition screen.
+                </p>
+
+                <p>
+                    On the right side of the Nutrition card you will find two action buttons:
+                </p>
+
+                <div class="action-list">
+                    <div class="action-item">
+                        <img src="assets/images/homescreen/add_meal_button.jpg" alt="">
+                        <strong>Add Meal</strong>
+                        <span class="dash">-</span>
+                        <span class="description">
+                            The add meal button will let you quickly add a meal by looking for it online, or creating
+                            your own.
+                        </span>
+                    </div>
+
+                    <div class="action-item">
+                        <img src="assets/images/homescreen/qr_code_button.jpg" alt="">
+                        <strong>Scan Barcode</strong>
+                        <span class="dash">-</span>
+                        <span class="description">
+                            The Barcode button lets you scan a barcode on a product. The app will try to find that
+                            product in a database.
+                            Not all products are registered. If the app can't find your product, it will give you a
+                            notification to add the product
+                            manually.
+                        </span>
+                    </div>
+                </div>
+                <div>
+                    <p class="muted">Tutorial</p>
+                    <p>When first starting the app, it gives you an option to start a tutorial. This will show you the
+                        basics of the app. Missed it or need a quick refresher? Just head to the <a
+                            class="a-outside-action-item" href="#settings">settings</a> and reset the
+                        tutorial. It will show up on your Home Screen again.</p>
+                </div>
+                <div>
+                    <p class="muted">Daily Weigh-Ins</p>
+                    <p>To help you with your weight goals, we give you a daily reminder to weigh yourself. The reminder
+                        has an ? icon in the top right. The reminder can be disabled by pressing this buttons or heading
+                        to the settings. The <a class="a-outside-action-item" href="#weight">weight section</a> gives
+                        you more information about your weight and how to track this.
+                    </p>
+                </div>
+            </div>
+
+
+        </section>
+
+        <section class="card" id="workout">
+            <h2>Workout Screen</h2>
+            <div>
+                <p class="muted">Action Buttons</p>
+                <p>The <strong>Action Buttons</strong> will quickly let you navigate to different screens.
+                    Below is an explanation for each button.
+                </p>
+                <div class="action-list">
+                    <div class="action-item">
+                        <img src="assets/images/workoutscreen/start_workout_button.jpg" alt="">
+                        <strong>Start Workout</strong>
+                        <span class="dash">-</span>
+                        <span class="description">
+                            The start workout button immediately starts a new workout so you can begin
+                            training right away.
+                        </span>
+                    </div>
+
+                    <div class="action-item">
+                        <img src="assets/images/workoutscreen/template_button.jpg" alt="">
+                        <strong>Template</strong>
+                        <span class="dash">-</span>
+                        <span class="description">
+                            The second button lets you select a workout template to quickly start a
+                            predefined routine.
+                        </span>
+                    </div>
+                    <div class="action-item">
+                        <img src="assets/images/workoutscreen/history_button.jpg" alt="">
+                        <strong>History</strong>
+                        <span class="dash">-</span>
+                        <span class="description">
+                            The third button will let you view all the workouts you've previously completed. You can
+                            filter workouts to find them easier. By pressing on a workout you can view the details and
+                            even edit them.
+                        </span>
+                    </div>
+                    <div class="action-item">
+                        <img src="assets/images/workoutscreen/exercise_button.jpg" alt="">
+                        <strong>Exercises</strong>
+                        <span class="dash">-</span>
+                        <span class="description">
+                            The fourth button navigates you to the Exercise Screen. Here you can change,
+                            add and delete
+                            all your exercises. We've given you a few exercise to start with. Feel free to delete
+                            everything and completely start over!
+                        </span>
+                    </div>
+                </div>
+                <p class="muted">Recent Workouts</p>
+                <p>In the recent workouts section your 3 latest workouts will show up. You can tap them to view the
+                    whole workout. </p>
+                <p class="muted">Monthly Activity</p>
+                <p>In the monthly activity chart you can view the amount of workouts you've done each month in the
+                    selected year. You can use the chevron buttons to change the year you're viewing.
+                </p>
+            </div>
+        </section>
+
+        <section class="card" id="nutrition">
+            <h2>Nutrition Screen</h2>
+            <div>
+                <p class="muted">Action Buttons</p>
+                <p>The <strong>Action Buttons</strong> will quickly let you navigate to different screens.
+                    Below is an explanation for each button.
+                </p>
+                <div class="action-item">
+                    <img src="assets/images/nutritionscreen/goal_button.jpg" alt="">
+                    <strong>Goals</strong>
+                    <span class="dash">-</span>
+                    <span class="description">
+                        The app lets you completely customize and make your own goals. Pressing this
+                        button will show
+                        you a dropdown with 'Calculate Goal' and 'Add Manually'. If you're an experienced athlete and
+                        know how many calories, protein, carbs etc. you should be eating, you can select this button. If
+                        you're not that experienced and would like some help, you can use the 'Calculate Goal button'.
+                        By filling in some information about yourself, like your length, age and activity level the app
+                        can help you with setting your goals.
+                    </span>
+                </div>
+                <div class="action-item">
+                    <img src="assets/images/nutritionscreen/calender_button.jpg" alt="">
+                    <strong>Date</strong>
+                    <span class="dash">-</span>
+                    <span class="description">
+                        The date you're viewing will normally be set to today. You can change the date using the
+                        calender button. Each day you've filled in your nutrition will be saved. Using this button you
+                        can review when you've reached your nutrition goals. You can also use the chevron buttons next
+                        to the date to go back and forth quicker.
+                    </span>
+                </div>
+                <div class="action-item">
+                    <img src="assets/images/nutritionscreen/qr_button.jpg" alt="">
+                    <strong>Barcodes</strong>
+                    <span class="dash">-</span>
+                    <span class="description">
+                        Like on the Home Screen, the Nutrition Screen also has a barcode scanner. You can easily find
+                        the
+                        products you've consumed by scanning their barcode. The app uses a very wide variety of products
+                        for different countries.
+                    </span>
+                </div>
+            </div>
+            <div>
+                <p class="muted">Charts</p>
+                <p>The <strong>Charts</strong> will give you a good overview of how much you've consumed during the day.
+                    The calorie chart will always be visible, but for the protein, carbs, fats and sugar this can be
+                    changed in the <a class="a-outside-action-item" href="#settings">settings</a>. If you've left out
+                    any of the
+                    nutrition while adding a goal manually, these charts will not show up either.</p>
+                <p>You can tap on the charts to see how much each product contributed to the total percentage (except
+                    for the calorie chart). Tapping the chart will bring you to a new screen, where the products will be
+                    sorted from contributing the most to contributing the least</p>
+            </div>
+            <div>
+                <p class="muted">Product List</p>
+                <p>The <strong>Product List</strong> shows you what <a class="a-outside-action-item"
+                        href="">products</a> you've added during the day.</p>
+                <div class="action-item">
+                    <img src="assets/images/nutritionscreen/add_product_button.jpg" alt="">
+                    <strong>Products</strong>
+                    <span class="dash">-</span>
+                    <span class="description">
+                        You can add a product by pressing the + button in the bottom right.
+                    </span>
+                </div>
+                <p>Each product that is added can also be edited or removed. Tapping on a product lets you edit or
+                    remove it. It also shows you the nutriments for that specific product. The amount can be changed
+                    manually by pressing the grams square, or you can choose one of the specified values below it. The
+                    amount is always specified in <strong>grams</strong>. You can also swipe right on a product in the
+                    product list to remove it.</p>
+                <p>If you often consume the same products, going back in time using the calender button let's you copy a
+                    single product to today by tapping on it. You can also copy all products to today by using the 'Copy
+                    all to today' button in the top right of the product list. Note: These buttons only show up when the
+                    date is not equal to today.</p>
+            </div>
+        </section>
+
+        <section class="card" id="achievements">
+            <h2>Achievements</h2>
+            <p>You can unlock <strong>Achievements</strong> by staying consistent.</p>
+            <div>
+                <p class="muted">Progression</p>
+                <p>In the top of the screen you can view your progression. It will show you the amount of attainable
+                    achievements and the amount of achievements you've unlocked.</p>
+            </div>
+            <div>
+                <p class="muted">Achievement</p>
+                <p>Below the progression, you can view all the unlockable achievements. When the achievement is locked,
+                    a lock icon will appear in the top right. Whenever you've unlocked an achievement, this icon will
+                    disappear. You can tap on the achievements to see what tasks you need to complete in order to unlock
+                    them.</p>
+            </div>
+            <p>Achievements are a great way to keep you motivated. It makes you feel like you've challenged yourself to
+                keep progressing. That's the feeling we all want you to have! More achievements will be added in the
+                future.</p>
+        </section>
+
+        <section class="card" id="profile">
+            <h2>Profile</h2>
+            <p>The <strong>Profile</strong> page is a great place to customize the app to your liking and track your
+                progress.</p>
+            <p>We think it's important to personalize the app to you. By pressing the pencil mark in the top right of
+                the screen, you can edit your profile. Add your name, birthday, gender and body metrics. This will also
+                make it easier to calculate goals.</p>
+            <div class="action-item">
+                <img src="assets/images/profilescreen/prs.jpg" alt="">
+                <strong>Personal Records</strong>
+                <span class="dash">-</span>
+                <span class="description">
+                    It's important to keep track of your personal records(PR's). By clicking on this button the app
+                    takes you
+                    to the Personal Records Screen. Here you can select an exercise to view your PR's during
+                    a specific time. You can use the Month - Year slider in the top right, to change the period.
+                    Changing it to month will show you on what day during that month you've achieved a PR
+                    for the selected exercise. Changing it to year will show you the highest PR of each month.
+                </span>
+            </div>
+            <div class="action-item">
+                <img src="assets/images/profilescreen/goals.jpg" alt="">
+                <strong>Goals</strong>
+                <span class="dash">-</span>
+                <span class="description">
+                    In other screens you've seen that you can change your goals. Here you can view the specific details
+                    of the goals you've set or calculated. You can also edited your goals.
+                </span>
+            </div>
+            <div class="action-item" id="weight">
+                <img src="assets/images/profilescreen/goals.jpg" alt="">
+                <strong>Weight</strong>
+                <span class="dash">-</span>
+                <span class="description">
+                    Whether you're losing or gaining weight, it's important to keep track of this. In the Weight Screen
+                    you get a perfect overview of your weight for each day and month. This let's you go back in time to
+                    see the progress you've made. It's <strong>important</strong> that you always weigh yourself at the
+                    same time of each day. The best time to weigh yourself is before you have breakfast. It's normal to
+                    see fluctuations in your weight even when you're trying to lose some kilo's. You have to look at the
+                    bigger picture and the charts lets you do that.
+                </span>
+            </div>
+            <div class="action-item">
+                <img src="assets/images/profilescreen/inbox.jpg" alt="">
+                <strong>Inbox</strong>
+                <span class="dash">-</span>
+                <span class="description">
+                    We send you notifications for PR's, but also weekly overviews of workouts and nutrition. You can
+                    view all those notifications in the inbox. If you have any unseen notifications, a blue circle with
+                    the amount of unread notifications will show up in the top right.
+                </span>
+            </div>
+            <div class="action-item" id="settings">
+                <img src="assets/images/profilescreen/settings.jpg" alt="">
+                <strong>Settings</strong>
+                <span class="dash">-</span>
+                <span class="description">
+                    We think it's important that you get to customize the app as much as possible. In the Settings
+                    Screen you can change everything from getting notifications to charts, timers etc.
+                </span>
+            </div>
+
+
+        </section>
+
+        <section class="card" id="template">
+            <h2>Templates</h2>
+            <p><strong>Templates</strong> can be a quick way to start your workouts. But what are they?</p>
+            <div>
+                <p class="muted">
+                    Explanation
+                </p>
+                <p>A template is a blueprint for your workout. If you like training the same thing, templates make your
+                    life a lot easier. Instead of having to add each exercise over and over again, you can now make a
+                    blueprint with the exercises you want to do and the amount of sets.
+                </p>
+                <p>For example: You have a chest
+                    day with 4 exercises that you never change. You can add those 4 exercises to a template and select
+                    the amount of sets for each exercise. By starting the workout with a template, all exercises and
+                    sets will already be in the workout.</p>
+                <p>While creating a template you can add exercises with the 'Add Exercise' button. When an exercise is
+                    added, each exercise will show a number with a + and - button next to it. The number represents the
+                    amount of sets. Control the amount of sets with the + and - buttons next to it. To remove an
+                    exercise, simply just swipe right!</p>
+                <p>You can create as many templates as you want for <strong>free!</strong></p>
+            </div>
+
+        </section>
+
+        <section class="card">
+            <h2>New Workout</h2>
+        </section>
+
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-text">
+            © 2025 Invictum Fitness ·
+            <a href="privacy.html">Privacy</a>
+        </div>
+
+        <div class="footer-socials">
+            <a href="https://www.instagram.com/invictumfitness/" target="_blank">
+                <img class="footer-button" src="assets/images/Instagram_Glyph_White.png" alt="Instagram">
+            </a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
